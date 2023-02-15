@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+.link{
+    text-decoration: none;
+    
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+}
+
+header .navcontainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 2em;
+   color:white;
+    
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+}
+
+header ul li {
+	margin: 0 10px;
+}
+
+header ul li a {
+	color: #fff;
+	text-decoration: none;
+}

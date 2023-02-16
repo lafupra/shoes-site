@@ -71,12 +71,30 @@
     gap:1rem;
   }
   
-  @media (max-width: 768px) {
-    footer ul.list-unstyled li {
-      text-align: center;
-    }
-    
-    footer ul.list-inline {
-      text-align: center;
-    }
-  }
+ /* mobile */
+
+@media screen and (max-width: 400px) {
+ .row{
+  display:flex;
+  flex-direction:column;
+  
+ }
+
+ .rowc{
+  display:flex;
+  flex-direction:column;
+  
+ }
+	
+
+}
+
+/* tablet */
+
+@media screen and (max-width: 720px) {
+
+
+
+}
+
+

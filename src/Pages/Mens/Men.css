@@ -2,6 +2,8 @@
 .men-section{
     display:flex;
     gap:1rem;
+    width:100%;
+    margin-top: 1rem;;
    
 
 }
@@ -9,10 +11,8 @@
 
 /* filter sidebar */
 
-
 .filter-menu {
-    flex:2;
-    position:fixed;
+  flex:2;
     width: 300px;
     height:450px;
     background-color: #fff;
@@ -71,12 +71,28 @@
   /* men product section */
 
 .men-products{
- 
-    width:80%;
-    margin:1rem 1rem 1rem 350px;
+  flex:8;
     display:flex;
     gap:1rem;
    flex-wrap:wrap;
+}
+
+
+/* mobile and tablet */
+
+@media screen and (max-width: 728px) {
+
+  .filter-menu {
+    display:none;
+
+      
+     }
+
+   
+
+
+
+  
 }
 
 

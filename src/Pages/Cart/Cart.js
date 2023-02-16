@@ -1,13 +1,16 @@
 import React from 'react'
 import "./Cart.css"
 import {Link} from "react-router-dom"
+import cartimg1 from "../../Assets/compressed-images/cart-image1.png"
+import cartimg2 from "../../Assets/compressed-images/cart-image2.jpg"
+
 
 const Cart = () => {
   return (
     <>
     <div className="cart-section">
   <h2>Shopping Cart</h2>
-  <table>
+  <table className="cart-table">
     <thead>
       <tr>
         <th>Product</th>
@@ -20,7 +23,7 @@ const Cart = () => {
       <tr>
         <td>
           <div className="cart-item">
-            <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="Shoe"/>
+            <img src={cartimg1} alt="Shoe"/>
             <div className="cart-item-details">
               <h3>Product Name</h3>
               <p>Size: 8.5</p>
@@ -37,7 +40,7 @@ const Cart = () => {
       <tr>
         <td>
           <div className="cart-item">
-            <img src="https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Shoe"/>
+            <img src={cartimg2} alt="Shoe"/>
             <div className="cart-item-details">
               <h3>Product Name</h3>
               <p>Size: 9</p>

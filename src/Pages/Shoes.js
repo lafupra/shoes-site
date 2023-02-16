@@ -1,6 +1,12 @@
 import React from 'react'
 import "./Shoes.css"
 import {Link} from "react-router-dom"
+import product1 from "../Assets/compressed-images/hero-section-image.jpg"
+import product2 from "../Assets/compressed-images/product-image2.jpeg"
+import product3 from "../Assets/compressed-images/product-image3.webp"
+import categoryimg1 from "../Assets/compressed-images/category-image1.jpeg"
+import categoryimg2 from "../Assets/compressed-images/category-image2.webp"
+import categoryimg3 from "../Assets/compressed-images/category-image3.webp"
 
 
 const Shoes = () => {
@@ -24,19 +30,19 @@ const Shoes = () => {
 			<h2>New Arrivals</h2>
 			<div className="product-items">
 				<div className="product-item">
-					<img className="productImage" src="https://images.pexels.com/photos/2562992/pexels-photo-2562992.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Shoe 1"/>
+					<img className="productImage" src={product1} alt="Shoe 1"/>
 					<h4>Adidas Originals</h4>
 					<p>$99.99</p>
 					<button className="btn">Add to Cart</button>
 				</div>
 				<div className="product-item">
-					<img className="productImage" src="https://images.pexels.com/photos/5730956/pexels-photo-5730956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Shoe 2"/>
+					<img className="productImage" src={product2} alt="Shoe 2"/>
 					<h4>Nike Air Force 1</h4>
 					<p>$119.99</p>
 					<button className="btn">Add to Cart</button>
 				</div>
 				<div className="product-item">
-					<img className="productImage" src="https://images.pexels.com/photos/6594253/pexels-photo-6594253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Shoe 3"/>
+					<img className="productImage" src={product3} alt="Shoe 3"/>
 					<h4>Puma RS-X</h4>
 					<p>$89.99</p>
 					<button className="btn">Add to Cart</button>
@@ -53,17 +59,17 @@ const Shoes = () => {
   <div className="category-container">
     <div className="category">
      <Link to={"/men"}>
-     <img src="https://images.pexels.com/photos/7062135/pexels-photo-7062135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's Shoes"/>
+     <img src={categoryimg1} alt="Men's Shoes"/>
       <h3>Men's Shoes</h3>
       <button className="btn">Shop Now</button></Link> 
     </div>
     <div className="category">
-      <img src="https://images.pexels.com/photos/11588384/pexels-photo-11588384.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Women's Shoes"/>
+      <img src={categoryimg2} alt="Women's Shoes"/>
       <h3>Women's Shoes</h3>
       <button className="btn">Shop Now</button>
     </div>
     <div className="category">
-      <img src="https://images.pexels.com/photos/1620760/pexels-photo-1620760.jpeg" alt="Kids' Shoes"/>
+      <img src={categoryimg3} alt="Kids' Shoes"/>
       <h3>Kids' Shoes</h3>
       <button className="btn">Shop Now</button>
     </div>

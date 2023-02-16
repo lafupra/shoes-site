@@ -1,13 +1,14 @@
 import React from 'react'
 import "./SingleProduct.css"
 import {Link} from "react-router-dom"
+import cartimg1 from "../../Assets/compressed-images/cart-image1.png"
 
 const SingleProduct = () => {
   return (
     <>
     <div className="single-product-container">
 		<div className="product-image">
-			<img src="https://www.kicksonfire.com/wp-content/uploads/2018/06/air-jordan-1-mid-orange-peel-2.jpg" alt="Product Name"/>
+			<img src={cartimg1} alt="Product Name"/>
 		</div>
 		<div className="product-details">
 			<h2>Product Name</h2>

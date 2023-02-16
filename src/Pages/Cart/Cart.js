@@ -6,6 +6,9 @@ import cartimg2 from "../../Assets/compressed-images/cart-image2.jpg"
 
 
 const Cart = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0,0)
+  }
   return (
     <>
     <div className="cart-section">
@@ -66,13 +69,14 @@ const Cart = () => {
       </tr>
       <tr>
         <td colspan="3">Total</td>
+
         <td>$229.98</td>
       </tr>
     </tfoot>
   </table>
   <div className="cart-buttons">
-    <Link to={'/'}><button  className="cart-button">Continue Shopping</button></Link>
-    <Link to={'/checkout'}><button  className="cart-button">Checkout</button></Link>
+    <Link to={'/'} onClick={handleLinkClick}><button  className="cart-button">Continue Shopping</button></Link>
+    <Link to={'/checkout'} onClick={handleLinkClick}><button  className="cart-button">Checkout</button></Link>
   </div>
 </div>
     </>
